@@ -1,0 +1,26 @@
+.footer {
+  background-color: #262626;
+  color: #fff;
+  padding: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+.footer-cnpj {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 10px;
+}
+.footer a {
+  color: #c73028;;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
