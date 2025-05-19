@@ -1,27 +1,29 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-preco',
   templateUrl: './preco.component.html',
   styleUrls: ['./preco.component.scss']
 })
-export class PrecoComponent implements OnInit {
+export class PrecoComponent implements OnInit, AfterViewInit {
 
   @ViewChild('videoRef') videoElement!: ElementRef;
+  isLoading: boolean = true;
 
-  constructor() { }
+  constructor(private el: ElementRef) { }
 
   ngOnInit(): void {
     setTimeout(() => {
+      this.isLoading = false;
+
       const video = this.videoElement.nativeElement;
       video.muted = true;
       video.load();
       video.play().catch((err: any) => {
         console.warn('Erro ao tentar rodar vídeo (com delay):', err);
       });
-    }, 300);
+    }, 3000);
   }
-
 
   ngAfterViewInit(): void {
     const video = this.videoElement.nativeElement;
@@ -30,17 +32,16 @@ export class PrecoComponent implements OnInit {
       const entry = entries[0];
 
       if (entry.isIntersecting) {
-        // Quando o vídeo aparecer na tela
         video.muted = true;
-        video.load(); // Garante que ele recarrega e começa do início
+        video.load();
         video.play().catch((err: any) => {
           console.warn('Erro ao tentar rodar vídeo visível:', err);
         });
 
-        observer.disconnect(); // Para de observar depois de tocar
+        observer.disconnect();
       }
     }, {
-      threshold: 0.5 // Quando pelo menos 50% do vídeo estiver visível
+      threshold: 0.5
     });
 
     observer.observe(video);

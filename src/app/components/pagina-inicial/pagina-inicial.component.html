@@ -14,4 +14,20 @@
 </div>
 
 
+
+<!-- MENSAGEM TEMPORARIA -->
+<div class="modal-manutencao" *ngIf="emManutencao">
+  <div class="modal-content">
+    <h1>ATENÇÃO!</h1>
+    <h2>Site em Manutenção</h2>
+    <p>
+      Estamos realizando ajustes e testes no sistema. Durante este período, é possível que a navegação, especialmente em dispositivos móveis, não funcione corretamente. Algumas funcionalidades podem estar indisponíveis ou apresentar instabilidades temporárias. Agradecemos a compreensão.
+    </p>
+
+    <button (click)="fechar()">Fechar</button>
+  </div>
+</div>
+
+
+
 <app-footer></app-footer>
