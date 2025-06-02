@@ -6,10 +6,13 @@ import { Component, Input, OnInit, ElementRef } from '@angular/core';
   styleUrls: ['./colunas-img.component.scss']
 })
 export class ColunasImgComponent implements OnInit {
+   whatsAppLink: string = '';
 
   @Input() imageSrc: string = '';
   @Input() title: string = '';
   @Input() description: string = '';
+  @Input() buttonText?: string = '';
+  @Input() buttonEmail?: string = '';
 
   isVisible: boolean = false;
 
@@ -23,6 +26,11 @@ export class ColunasImgComponent implements OnInit {
       }
     });
     observer.observe(this.el.nativeElement);
+
+     if (this.buttonText) {
+      const encodedText = encodeURIComponent(this.buttonText);
+      this.whatsAppLink = `https://wa.me/5511989209203?text=${encodedText}`;
+     }
   }
 
   convertToWebP(src: string): string {

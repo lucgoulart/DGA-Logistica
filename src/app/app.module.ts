@@ -10,6 +10,7 @@ import { PrecoComponent } from './components/preco/preco/preco.component';
 import { PrazoComponent } from './components/prazo/prazo/prazo.component';
 import { ColunasImgComponent } from './components/colunas-img/colunas-img/colunas-img.component';
 import { ParceirosComponent } from './components/parceiros/parceiros/parceiros.component';
+import { RastreiosComponent } from './components/rastreios/rastreios/rastreios.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ParceirosComponent } from './components/parceiros/parceiros/parceiros.c
     PrecoComponent,
     PrazoComponent,
     ColunasImgComponent,
-    ParceirosComponent
+    ParceirosComponent,
+    RastreiosComponent
   ],
   imports: [
     BrowserModule,

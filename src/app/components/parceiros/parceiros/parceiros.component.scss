@@ -40,10 +40,20 @@
   background-color: #007bff;
   color: white;
   cursor: pointer;
+
+  a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+
+  &:hover{
+    background-color: #043b76;
+  }
 }
 
 .parceiros-text{
-padding: 40px;
+padding: 20px;
 }
 
 .content-button{
@@ -56,5 +66,29 @@ padding: 40px;
   width: 100%;
   justify-content: center;
   margin-top: 70px;
+  margin-bottom: 70px;
 
 }
+
+  @media (max-width: 800px) {
+    h2{
+      font-size: 1.5rem !important;
+    }
+  }
+
+    @media (max-width: 560px) {
+    h2{
+      padding: 20px;
+    }
+    .titulo-parceiros{
+      padding: 20px;
+    }
+
+    .content-parceiros{
+      margin-bottom: 70px;
+      margin-top: 0px;
+    }
+  }
+
+
+

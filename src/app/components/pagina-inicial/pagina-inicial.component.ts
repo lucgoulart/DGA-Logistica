@@ -6,7 +6,6 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
   styleUrls: ['./pagina-inicial.component.scss']
 })
 export class PaginaInicialComponent implements OnInit, OnDestroy {
-  emManutencao: boolean = true;
   imageList1: string[] = [
     'assets/cargo-truck.jfif',
     'assets/trade-transport.jfif',
@@ -45,8 +44,4 @@ export class PaginaInicialComponent implements OnInit, OnDestroy {
     }, 5000); // muda a imagem a cada 2 segundos
   }
 
-  fechar(){
-     this.emManutencao = false;
-
-  }
 }

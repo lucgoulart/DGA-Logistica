@@ -4,18 +4,25 @@
   align-items: center;
   max-width: 100%;
   text-align: center;
+  position: relative; // necessário para posicionamento absoluto da .content
 
   img {
     width: 100%;
     height: 620px;
     aspect-ratio: 1352 / 691;
     object-fit: cover;
-    border-radius: 10px;
   }
 
   .content {
     margin-top: 70px;
     position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%); // centraliza na imagem
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 
     h1 {
       font-size: 3.5rem;
@@ -30,5 +37,60 @@
       font-weight: 600;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     }
+
+    .action-button-whats {
+      padding: 12px 24px;
+      font-size: 1rem;
+      background-color: #f4640b;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #d85306;
+      }
+    }
   }
-}
+
+    .action-button-email {
+      padding: 12px 24px;
+      font-size: 1rem;
+      background-color: #033e8d;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #0060df;
+      }
+    }
+  }
+
+
+
+
+
+  a {
+    text-decoration: none;
+  }
+
+
+
+
+  @media (max-width: 400px) {
+    h1{
+      font-size: 2.5rem !important;
+    }
+    p {
+      margin: 0px;
+    }
+  }
+
+
+

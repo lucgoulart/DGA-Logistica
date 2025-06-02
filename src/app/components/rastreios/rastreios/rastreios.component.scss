@@ -1,0 +1,31 @@
+.content-rastreios{
+  padding: 20px;
+  margin-bottom: 70px;
+}
+
+.button-rastreamento {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f4640b;
+  color: white;
+  cursor: pointer;
+
+  a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+
+  &:hover{
+    background-color: #d85306;
+  }
+}
+
+.content-button{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}

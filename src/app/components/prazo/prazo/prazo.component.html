@@ -2,21 +2,29 @@
 <app-colunas-img
   [imageSrc]="'assets/truck-montain.jpg'"
   [title]="'Carro Dedicado'"
-  [description]="'Exclusividade total para sua carga, sem paradas, garantindo os menores prazos de entrega.'">
+  [description]="'Exclusividade total para sua carga, sem paradas, garantindo os menores prazos de entrega.'"
+  [buttonText]="'📦 Bora tirar esse frete do papel? Chama no Whats!'"
+  [buttonEmail]="'📬 Nosso e-mail é direto, como seu objetivo.'"
+  >
 </app-colunas-img>
 
 
 <app-colunas-img
   [imageSrc]="'assets/rodoviario-exp.png'"
   [title]="'Rodoviário Expresso'"
-  [description]="' Entregas mais rápidas no modal rodoviário com prioridade nas coletas e trajetos.'">
+  [description]="' Entregas mais rápidas no modal rodoviário com prioridade nas coletas e trajetos.'"
+  [buttonText]="'⚡ Solução na palma da mão. Clicou, falou.'"
+  [buttonEmail]="'🖋️ Uma linha no e-mail e a gente entra em ação.'"
+  >
 </app-colunas-img>
 
 
 <app-colunas-img
   [imageSrc]="'assets/cargo-plane-airport.jpg'"
   [title]="'Aéreo'"
-  [description]="' O caminho mais rápido para cargas urgentes, reduzindo drasticamente o tempo de trânsito.'">
+  [description]="' O caminho mais rápido para cargas urgentes, reduzindo drasticamente o tempo de trânsito.'"
+  [buttonText]="'🛣️ Sua carga não espera. Nosso atendimento também não.'"
+  [buttonEmail]="'🧾 Quer um plano de transporte com inteligência? Fala com a gente.'">
 </app-colunas-img>
 
 
@@ -24,7 +32,10 @@
 <app-colunas-img
   [imageSrc]="'assets/airplane-sunrise.jpg'"
   [title]="'Hot Situation'"
-  [description]="' Atendimento emergencial com acionamento imediato para transportes urgentes e prazos reduzidos.'">
+  [description]="' Atendimento emergencial com acionamento imediato para transportes urgentes e prazos reduzidos.'"
+  [buttonText]="'🤝 A gente resolve no papo. Vem pro Whats.'"
+  [buttonEmail]="'💼 Profissionalismo com proximidade. Escreve pra DGA.'"
+  >
 </app-colunas-img>
 
 
@@ -32,7 +43,10 @@
 <app-colunas-img
   [imageSrc]="'assets/low-angle-view-city.jpg'"
   [title]="'Manuseio e Armazenagem'"
-  [description]="' Processamento ágil de mercadorias para reduzir tempo de permanência e acelerar distribuição.'">
+  [description]="' Processamento ágil de mercadorias para reduzir tempo de permanência e acelerar distribuição.'"
+  [buttonText]="'🔥 Atendimento na velocidade da sua urgência.'"
+  [buttonEmail]="'⏳ Pra decisões que pedem atenção, conte com nosso e-mail.'"
+  >
 </app-colunas-img>
 
 
@@ -40,7 +54,10 @@
 <app-colunas-img
   [imageSrc]="'assets/animacao-prazo-t.png'"
   [title]="'Distribuição estratégica'"
-  [description]="' Otimização de fluxos para entregas mais rápidas nas principais regiões do Brasil.'">
+  [description]="' Otimização de fluxos para entregas mais rápidas nas principais regiões do Brasil.'"
+  [buttonText]="'🧭 Seu frete tem destino. E começa aqui.'"
+  [buttonEmail]="'🚀 Um e-mail hoje, uma entrega mais rápida amanhã.'"
+  >
 </app-colunas-img>
 
 
@@ -56,3 +73,8 @@
 
 
 
+<app-footer></app-footer>
+
+<div class="modal-spinner" *ngIf="isLoading">
+  <div class="spinner"></div>
+</div>

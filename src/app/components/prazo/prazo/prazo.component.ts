@@ -8,18 +8,21 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 export class PrazoComponent implements OnInit {
 
   @ViewChild('videoRef') videoElement!: ElementRef;
+    isLoading: boolean = true;
 
   constructor() { }
 
   ngOnInit(): void {
     setTimeout(() => {
+      this.isLoading = false;
+
       const video = this.videoElement.nativeElement;
       video.muted = true;
       video.load();
       video.play().catch((err: any) => {
         console.warn('Erro ao tentar rodar vídeo (com delay):', err);
       });
-    }, 300);
+    }, 3000);
   }
 
 

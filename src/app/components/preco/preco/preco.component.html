@@ -4,35 +4,50 @@
 <app-colunas-img
   [imageSrc]="'assets/rodoviario-compartilhado.jfif'"
   [title]="'Rodoviário Compartilhado'"
-  [description]="'Reduza custos aproveitando espaço em veículos que já estão em rota. Ideal para cargas menores e envios não urgentes.'">
+  [description]="'Reduza custos aproveitando espaço em veículos que já estão em rota. Ideal para cargas menores e envios não urgentes.'"
+  [buttonText]="'🚛 Entrega certeira começa com uma conversa.'"
+  [buttonEmail]="'✉️ Estratégia boa começa com um “Oi, tudo bem?'"
+  >
 </app-colunas-img>
 
 <!-- 🔹 Aero-Rodoviário – Combinação estratégica do modal aéreo com o rodoviário para equilibrar preço e agilidade. -->
 <app-colunas-img
   [imageSrc]="'assets/aereorodoviario.jpg'"
   [title]="'Aero-Rodoviário'"
-  [description]="'Combinação estratégica do modal aéreo com o rodoviário para equilibrar preço e agilidade.'">
+  [description]="'Combinação estratégica do modal aéreo com o rodoviário para equilibrar preço e agilidade.'"
+  [buttonText]="'🟢 Embarque imediato: clique e fale com a DGA.'"
+  [buttonEmail]="'📬 Nosso e-mail é direto, como seu objetivo.'"
+  >
 </app-colunas-img>
 
 <!-- 🔹 Manuseio e Armazenagem – Estrutura completa para recebimento, conferência e armazenagem temporária, reduzindo necessidade de espaço próprio. -->
 <app-colunas-img
   [imageSrc]="'assets/manuseio-armazen.jpg'"
   [title]="'Manuseio e Armazenagem'"
-  [description]="'Estrutura completa para recebimento, conferência e armazenagem temporária, reduzindo necessidade de espaço próprio.'">
+  [description]="'Estrutura completa para recebimento, conferência e armazenagem temporária, reduzindo necessidade de espaço próprio.'"
+  [buttonText]="'📲 Resolver frete com um clique? Aqui dá!'"
+  [buttonEmail]="'🛡️ Frete sem surpresas começa com planejamento.'"
+  >
 </app-colunas-img>
 
 <!-- 🔹 Consolidação de Cargas – Possibilidade de reunir diferentes cargas em um único embarque para otimização de custos. -->
 <app-colunas-img
   [imageSrc]="'assets/consolidacao-de-cargas.jpg'"
   [title]="'Consolidação de Cargas'"
-  [description]="'Possibilidade de reunir diferentes cargas em um único embarque para otimização de custos.'">
+  [description]="'Possibilidade de reunir diferentes cargas em um único embarque para otimização de custos.'"
+  [buttonText]="'🕒 Tempo é carga. E no Whats, a resposta é agora.'"
+  [buttonEmail]="'📌 Cada detalhe conta. Manda pra gente no e-mail.'"
+  >
 </app-colunas-img>
 
 <!-- 🔹 Planejamento Logístico Inteligente – Roteirização eficiente para menor custo por entrega. -->
 <app-colunas-img
   [imageSrc]="'assets/planejamento-logistico.jpeg'"
   [title]="'Planejamento Logístico Inteligente'"
-  [description]="'Roteirização eficiente para menor custo por entrega.'">
+  [description]="'Roteirização eficiente para menor custo por entrega.'"
+  [buttonText]="'🖐️ Nada de robô: aqui tem gente de verdade pra te ajudar.'"
+  [buttonEmail]="'🖥️ Preferência por e-mail? Estamos sempre atentos.'"
+  >
 </app-colunas-img>
 
 
@@ -40,6 +55,11 @@
   <source src="assets/video-preço.mp4" type="video/mp4">
   Seu navegador não suporta vídeos.
 </video>
+
+
+
+
+<app-footer></app-footer>
 
 
 <div class="modal-spinner" *ngIf="isLoading">

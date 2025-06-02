@@ -4,12 +4,14 @@ import { PaginaInicialComponent } from './components/pagina-inicial/pagina-inici
 import { PrecoComponent } from './components/preco/preco/preco.component';
 import { PrazoComponent } from './components/prazo/prazo/prazo.component';
 import { ParceirosComponent } from './components/parceiros/parceiros/parceiros.component';
+import { RastreiosComponent } from './components/rastreios/rastreios/rastreios.component';
 
 const routes: Routes = [
   { path: '', component: PaginaInicialComponent },
   { path: 'preco', component: PrecoComponent},
   { path: 'prazo', component: PrazoComponent},
-  { path: 'parceiros', component: ParceirosComponent}
+  { path: 'parceiros', component: ParceirosComponent},
+  { path: 'rastreio', component: RastreiosComponent}
 ];
 
 @NgModule({
