@@ -1,0 +1,60 @@
+.slider {
+  height: 120px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background: #fff;
+
+  .slide-track {
+    display: flex;
+    width: calc(250px * 14); // 7 imagens duplicadas = 14
+    animation: scroll 30s linear infinite;
+    align-items: center;
+  }
+
+  .slide {
+    height: 120px;
+    width: 250px;
+    margin: 0 20px;
+    opacity: 0.8;
+    transition: transform 0.3s ease;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-250px * 7)); // metade das imagens
+  }
+}
+
+.cta-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.parceiros-text{
+padding: 40px;
+}
+
+.content-button{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.content-parceiros{
+  width: 100%;
+  justify-content: center;
+  margin-top: 70px;
+
+}
