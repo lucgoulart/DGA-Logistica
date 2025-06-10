@@ -1,27 +1,32 @@
 <app-header></app-header>
 
-<div class="container">
-  <div class="text-section">
-    <div class="texto">
-      {{ currentText }}
-    </div>
-
-    <div class="imagem-texto" *ngIf="currentItem?.imagemTexto">
-      <img [src]="currentItem.imagemTexto" alt="Imagem adicional" />
-    </div>
-  </div>
-
-  <div class="image-section" #scrollContainer (scroll)="onScroll()">
-    <div class="scroll-content">
-      <div
-        class="image"
-        *ngFor="let item of items"
-        [ngStyle]="{ 'background-color': currentColor }"
-      >
-        <img [src]="item.imagem" alt="Imagem relacionada ao texto" />
+<div class="wrapper">
+  <div class="scroll-area" (scroll)="onScroll($event)" #scrollContainer>
+    <!-- Coluna de textos -->
+    <div class="text-sections" [style.height.px]="parceiros.length * sectionHeight">
+      <div class="section" *ngFor="let parceiro of parceiros; let i = index">
+        <div class="content" *ngIf="getActiveIndex() === i">
+          <h2>{{ parceiro.nome }}</h2>
+          <p>{{ parceiro.descricao }}</p>
+        </div>
       </div>
+    </div>
+
+    <!-- Camada de imagem sticky -->
+    <div class="image-area">
+      <ng-container *ngFor="let parceiro of parceiros; let i = index">
+        <img
+          [src]="parceiro.logo"
+          class="blend-image"
+          [style.opacity]="getOpacity(i)"
+          [style.zIndex]="parceiros.length - i"
+        />
+      </ng-container>
     </div>
   </div>
 </div>
+
+
+
 
 <app-footer></app-footer>
