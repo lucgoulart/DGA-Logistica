@@ -7,7 +7,7 @@
       <div class="section" *ngFor="let parceiro of parceiros; let i = index">
         <div class="content" *ngIf="getActiveIndex() === i">
           <h2>{{ parceiro.nome }}</h2>
-          <p>{{ parceiro.descricao }}</p>
+       <p>{{ isMobile ? parceiro.descricaoMobile : parceiro.descricao }}</p>
         </div>
       </div>
     </div>
