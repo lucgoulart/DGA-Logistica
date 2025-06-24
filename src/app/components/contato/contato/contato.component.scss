@@ -45,7 +45,7 @@
 .contato-info {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 4.9rem;
 }
 
 .info-item {
@@ -170,6 +170,7 @@
 
 .form-group {
   margin-bottom: 1.5rem;
+  padding: 10px;
 }
 
 .form-group input,
@@ -251,3 +252,5 @@ textarea {
   color: #495057;
   font-size: 1.1rem;
 }
+
+
