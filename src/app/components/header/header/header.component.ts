@@ -21,4 +21,8 @@ export class HeaderComponent implements OnInit {
     this.router.navigate(['/rastreio']);
   }
 
+  redirecionarContato(){
+    this.router.navigate(['/contato'])
+  }
+
 }

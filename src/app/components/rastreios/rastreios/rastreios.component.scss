@@ -1,31 +1,74 @@
-.content-rastreios{
-  padding: 20px;
-  margin-bottom: 70px;
-}
+.tracking-page {
+ background-image: url('/assets/log-rastreio.jpg');
 
-.button-rastreamento {
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 18px;
-  border: none;
-  border-radius: 8px;
-  background-color: #f4640b;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 60px 20px;
   color: white;
-  cursor: pointer;
-
-  a{
-    text-decoration: none;
-    color: #fff;
-  }
-
-
-  &:hover{
-    background-color: #d85306;
-  }
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.content-button{
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+.tracking-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 16px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.tracking-content h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.tracking-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.tracking-content ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.tracking-content ul li {
+  font-size: 1.1rem;
+  margin: 8px 0;
+}
+
+.tracking-button-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.tracking-button {
+  background-color: #00bfa6;
+  color: white;
+  padding: 14px 28px;
+  font-size: 1rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.tracking-button:hover {
+  background-color: #008c7a;
+}
+
+
+@media (max-width: 768px) {
+  .tracking-overlay {
+    padding: 20px;
+  }
+
+  .tracking-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .tracking-content p, .tracking-content ul li {
+    font-size: 1rem;
+  }
 }

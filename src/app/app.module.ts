@@ -11,6 +11,9 @@ import { PrazoComponent } from './components/prazo/prazo/prazo.component';
 import { ColunasImgComponent } from './components/colunas-img/colunas-img/colunas-img.component';
 import { ParceirosComponent } from './components/parceiros/parceiros/parceiros.component';
 import { RastreiosComponent } from './components/rastreios/rastreios/rastreios.component';
+import { ContatoComponent } from './components/contato/contato/contato.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,11 +25,15 @@ import { RastreiosComponent } from './components/rastreios/rastreios/rastreios.c
     PrazoComponent,
     ColunasImgComponent,
     ParceirosComponent,
-    RastreiosComponent
+    RastreiosComponent,
+    ContatoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

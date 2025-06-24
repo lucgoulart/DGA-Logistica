@@ -12,6 +12,10 @@
   flex: 1;
   min-width: 200px;
   margin: 10px;
+
+  img{
+    width: 130px;
+  }
 }
 .footer-cnpj {
   width: 100%;
@@ -20,7 +24,7 @@
   font-size: 10px;
 }
 .footer a {
-  color: #c73028;;
+  color: #c73028;
   text-decoration: none;
 }
 .footer a:hover {
