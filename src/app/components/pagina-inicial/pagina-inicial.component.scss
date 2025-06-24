@@ -29,14 +29,17 @@
      }
   }
 
-  &__redirect-main-link{
+  &__redirect-main-link {
     position: absolute;
-    top: 70%;
-    left: 40%;
+    top: 50%;  // centro vertical
+    left: 50%; // centro horizontal
+    transform: translate(-50%, -50%); // centraliza com base no próprio tamanho
     font-size: 4.25rem;
     z-index: 1000;
-    margin: 0px;
-
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    width: 100%;
   }
 
   a{
@@ -54,8 +57,5 @@
 
       }
 
-        &__redirect-main-link{
-          left: 30% !important;
-        }
     }
   }
