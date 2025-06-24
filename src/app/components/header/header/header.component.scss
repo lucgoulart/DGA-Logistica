@@ -43,4 +43,17 @@
     }
 
 
+     @media (max-width: 460px) {
+    .content-header{
+      p{
+        margin: 0px !important;
+        font-size: 16px;
+      }
+      &__collumn{
+        gap: 10px;
+
+      }
+    }
+  }
+
   }
