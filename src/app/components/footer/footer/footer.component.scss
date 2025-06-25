@@ -1,7 +1,7 @@
 .footer {
   background-color: #262626;
   color: #fff;
-  padding: 80px;
+  padding: 53px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -34,4 +34,20 @@
   p {
     font-size: 10px;
   }
+}
+
+@media (max-width: 912px) {
+
+img{
+  width: 50px !important;
+}
+
+h3{
+  font-size: 12px !important;
+}
+
+p{
+  font-size: 10px !important;
+}
+
 }

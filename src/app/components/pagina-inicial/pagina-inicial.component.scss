@@ -48,14 +48,21 @@
   }
 }
 
-  @media (max-width: 912px) {
-    .content-pagina-inicial{
-      display: block;
+@media (max-width: 912px) {
+  .content-pagina-inicial {
+    display: block;
 
-      &__block-imgs{
-        width: 100% !important;
+    &__block-imgs {
+      width: 100% !important;
 
+      img {
+        height: auto !important; // Ajusta a altura automaticamente
+        object-fit: contain !important; // Evita corte
       }
+    }
 
+    &__redirect-main-link {
+      font-size: 2rem; // Ajuste de tamanho do texto pro mobile
     }
   }
+}
