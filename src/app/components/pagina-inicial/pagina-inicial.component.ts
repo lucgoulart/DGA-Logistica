@@ -8,7 +8,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 export class PaginaInicialComponent implements OnInit, OnDestroy {
   imageList1: string[] = [
     'assets/cargo-truck.jfif',
-    'assets/trade-transport.jfif',
+    'assets/truck-img.jfif',
     // adicione mais imagens conforme necessário
   ];
 
