@@ -145,7 +145,9 @@
   form {
     display: flex;
     flex-direction: column;
-    align-items: center; // Centraliza os itens no eixo horizontal
+    align-items: center;
+    width: 100%;
+    max-width: 374px;
 
     .form-group {
       margin-bottom: 1.5rem;
@@ -269,7 +271,13 @@
       max-width: 240px !important;
     }
 
-}
+     @media (max-width: 334px) {
+      form{
+        max-width: 248px !important;
+      }
+    }
+  }
+
 
 
 
