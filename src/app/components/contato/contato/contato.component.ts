@@ -37,11 +37,17 @@ enviarFormulario() {
         this.mensagemModal = `${this.formData.nome}, sua mensagem foi enviada com sucesso! Em breve entraremos em contato pelo e-mail: ${this.formData.email} ou pelo WhatsApp: ${this.formData.telefone}.`;
 
       },
-      error: () => {
+          error: () => {
         this.mostrarModal = true;
         this.tipoModal = 'erro';
-        this.mensagemModal = 'Ocorreu um erro ao enviar a mensagem. Tente novamente.';
-      }
+        this.mensagemModal = `
+          Ocorreu um erro ao enviar a mensagem. Tente novamente.<br>
+          Se o erro persistir, entre em contato pelo
+          <a href="https://wa.me/5511993818546" target="_blank" style="color: #25D366; text-decoration: underline;">
+            WhatsApp
+          </a>.
+        `;
+}
     });
   }
 }

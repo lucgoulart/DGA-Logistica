@@ -92,7 +92,7 @@
     #telefone="ngModel"
     placeholder="Seu telefone (opcional)"
   />
-  <div *ngIf="formData.telefone && !validarTelefone(formData.telefone)" style="color: red;">
+  <div *ngIf="formData.telefone && !validarTelefone(formData.telefone)" style="color: red; max-width: 200px;">
     Telefone inválido. Use o formato (XX) 9XXXX-XXXX.
   </div>
 
