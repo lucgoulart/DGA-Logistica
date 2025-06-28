@@ -119,7 +119,7 @@
   <div class="modal-content" (click)="$event.stopPropagation()">
     <h2 *ngIf="tipoModal === 'sucesso'" style="color: green;">Sucesso!</h2>
     <h2 *ngIf="tipoModal === 'erro'" style="color: red;">Erro!</h2>
-    <p class="p-modal">{{ mensagemModal }}</p>
+   <p class="p-modal" [innerHTML]="mensagemModal"></p>
     <button (click)="fecharModal()" class="submit-btn">Fechar</button>
   </div>
 </div>
