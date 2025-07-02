@@ -12,7 +12,6 @@ const routes: Routes = [
   { path: 'preco', component: PrecoComponent},
   { path: 'prazo', component: PrazoComponent},
   { path: 'parceiros', component: ParceirosComponent},
-  // { path: 'rastreio', component: RastreiosComponent},
   { path: 'contato', component: ContatoComponent}
 ];
 

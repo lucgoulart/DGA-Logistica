@@ -45,8 +45,30 @@
   a{
     color: #fff;
     text-decoration: none;
+
+
+
+     &:hover {
+    color: #f4640b; // cor ao passar o mouse
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; // ajusta a distância da linha em relação ao texto
+    width: 0%;
+    height: 2px;
+    background-color: #f4640b;
+    transition: width 0.3s ease;
+  }
+
+  &:hover::after {
+    width: 50%;
   }
 }
+  }
+
 
 @media (max-width: 912px) {
   .content-pagina-inicial {
