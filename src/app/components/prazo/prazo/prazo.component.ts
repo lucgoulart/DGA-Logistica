@@ -15,13 +15,6 @@ export class PrazoComponent implements OnInit, OnDestroy {
 
    colunas = [
   {
-    imageSrc: 'assets/truck-montain.jpg',
-    title: 'Carro Dedicado',
-    description: 'Exclusividade total para sua carga, sem paradas, garantindo os menores prazos de entrega.',
-    buttonText: '📦 Frete exclusivo? Chama no Whats!',
-    buttonEmail: '📬 Fale direto por e-mail.'
-  },
-  {
     imageSrc: 'assets/rodoviario-exp.png',
     title: 'Rodoviário Expresso',
     description: 'Entregas mais rápidas no modal rodoviário com prioridade nas coletas e trajetos.',

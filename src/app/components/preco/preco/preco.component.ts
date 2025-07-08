@@ -17,7 +17,7 @@ export class PrecoComponent implements OnInit, OnDestroy {
   {
     imageSrc: 'assets/consolidacao-de-cargas.jpg',
     title: 'Rodoaéreo',
-    description: 'Combinação estratégica do modal aéreo com o rodoviário para equilibrar preço e agilidade.',
+    description: 'A confiança do rodoviário com o ritmo do aéreo — agilidade de ponta a ponta para entregas que não podem esperar.',
     buttonText: '🟢 Clique e fale com a DGA.',
     buttonEmail: '📬 E-mail direto, sem rodeios.'
   },
@@ -34,6 +34,13 @@ export class PrecoComponent implements OnInit, OnDestroy {
     description: 'Roteirização eficiente para menor custo por entrega.',
     buttonText: '🖐️ Aqui tem atendimento humano.',
     buttonEmail: '🖥️ E-mail? A gente responde já.'
+  },
+   {
+    imageSrc: 'assets/truck-montain.jpg',
+    title: 'Carro Dedicado',
+    description: 'Exclusividade total para sua carga, sem paradas, garantindo os menores prazos de entrega.',
+    buttonText: '📦 Frete exclusivo? Chama no Whats!',
+    buttonEmail: '📬 Fale direto por e-mail.'
   },
 ];
 
