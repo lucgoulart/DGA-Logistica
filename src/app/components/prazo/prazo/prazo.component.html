@@ -1,77 +1,35 @@
 <app-header></app-header>
-<app-colunas-img
-  [imageSrc]="'assets/truck-montain.jpg'"
-  [title]="'Carro Dedicado'"
-  [description]="'Exclusividade total para sua carga, sem paradas, garantindo os menores prazos de entrega.'"
-  [buttonText]="'📦 Bora tirar esse frete do papel? Chama no Whats!'"
-  [buttonEmail]="'📬 Nosso e-mail é direto, como seu objetivo.'"
-  >
-</app-colunas-img>
 
+<div class="carousel-wrapper">
+ <div
+  class="carousel"
+  [style.transform]="'translateX(-' + currentSlide * 100 + '%)'"
+  [class.no-transition]="!isTransitioning"
+>
+    <app-colunas-img
+      *ngFor="let item of colunas"
+      [imageSrc]="item.imageSrc"
+      [title]="item.title"
+      [description]="item.description"
+      [buttonText]="item.buttonText"
+      [buttonEmail]="item.buttonEmail">
+    </app-colunas-img>
+  </div>
 
-<app-colunas-img
-  [imageSrc]="'assets/rodoviario-exp.png'"
-  [title]="'Rodoviário Expresso'"
-  [description]="' Entregas mais rápidas no modal rodoviário com prioridade nas coletas e trajetos.'"
-  [buttonText]="'⚡ Solução na palma da mão. Clicou, falou.'"
-  [buttonEmail]="'🖋️ Uma linha no e-mail e a gente entra em ação.'"
-  >
-</app-colunas-img>
+  <div class="indicators">
+  <button
+  *ngFor="let item of colunas; let i = index"
+  [class.active]="i === currentSlide"
+  (click)="goToSlide(i)">
+</button>
 
-
-<app-colunas-img
-  [imageSrc]="'assets/cargo-plane-airport.jpg'"
-  [title]="'Aéreo'"
-  [description]="' O caminho mais rápido para cargas urgentes, reduzindo drasticamente o tempo de trânsito.'"
-  [buttonText]="'🛣️ Sua carga não espera. Nosso atendimento também não.'"
-  [buttonEmail]="'🧾 Quer um plano de transporte com inteligência? Fala com a gente.'">
-</app-colunas-img>
-
-
-
-<app-colunas-img
-  [imageSrc]="'assets/airplane-sunrise.jpg'"
-  [title]="'Hot Situation'"
-  [description]="' Atendimento emergencial com acionamento imediato para transportes urgentes e prazos reduzidos.'"
-  [buttonText]="'🤝 A gente resolve no papo. Vem pro Whats.'"
-  [buttonEmail]="'💼 Profissionalismo com proximidade. Escreve pra DGA.'"
-  >
-</app-colunas-img>
-
-
-
-<app-colunas-img
-  [imageSrc]="'assets/low-angle-view-city.jpg'"
-  [title]="'Manuseio e Armazenagem'"
-  [description]="' Processamento ágil de mercadorias para reduzir tempo de permanência e acelerar distribuição.'"
-  [buttonText]="'🔥 Atendimento na velocidade da sua urgência.'"
-  [buttonEmail]="'⏳ Pra decisões que pedem atenção, conte com nosso e-mail.'"
-  >
-</app-colunas-img>
-
-
-
-<app-colunas-img
-  [imageSrc]="'assets/animacao-prazo-t.png'"
-  [title]="'Distribuição estratégica'"
-  [description]="' Otimização de fluxos para entregas mais rápidas nas principais regiões do Brasil.'"
-  [buttonText]="'🧭 Seu frete tem destino. E começa aqui.'"
-  [buttonEmail]="'🚀 Um e-mail hoje, uma entrega mais rápida amanhã.'"
-  >
-</app-colunas-img>
-
+  </div>
+</div>
 
 <video #videoRef muted loop playsinline preload="auto">
-  <source src="assets/modal-prazo.mp4" type="video/mp4">
+  <source src="assets/modal-prazo.mp4" type="video/mp4" />
   Seu navegador não suporta vídeos.
 </video>
-
-
-
-
-
-
-
 
 <app-footer></app-footer>
 

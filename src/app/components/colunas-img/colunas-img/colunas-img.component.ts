@@ -1,4 +1,5 @@
 import { Component, Input, OnInit, ElementRef } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-colunas-img',
@@ -16,7 +17,7 @@ export class ColunasImgComponent implements OnInit {
 
   isVisible: boolean = false;
 
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private router: Router) {}
 
   ngOnInit(): void {
     const observer = new IntersectionObserver(([entry]) => {
@@ -35,5 +36,14 @@ export class ColunasImgComponent implements OnInit {
 
   convertToWebP(src: string): string {
     return src.replace(/\.(png|jpg|jpeg)/, '.webp');
+  }
+  redirecionaWpp(){
+     if (this.whatsAppLink) {
+      window.open(this.whatsAppLink, '_blank');
+    }
+  }
+
+  redirecionaContato(){
+    this.router.navigate(['/contato'])
   }
 }

@@ -9,8 +9,8 @@ import { ContatoComponent } from './components/contato/contato/contato.component
 
 const routes: Routes = [
   { path: '', component: PaginaInicialComponent },
-  { path: 'preco', component: PrecoComponent},
-  { path: 'prazo', component: PrazoComponent},
+  { path: 'precisao', component: PrecoComponent},
+  { path: 'exclusividade', component: PrazoComponent},
   { path: 'parceiros', component: ParceirosComponent},
   { path: 'contato', component: ContatoComponent}
 ];

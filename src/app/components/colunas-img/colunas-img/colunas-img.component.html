@@ -3,25 +3,29 @@
   <div class="content">
     <h1 class="titulo">{{ title }}</h1>
     <p>{{ description }}</p>
-<a
-  *ngIf="buttonText"
-  class="action-button-whats"
-  [href]="whatsAppLink"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  {{ buttonText }}
-</a>
 
-
-    <a
-      *ngIf="buttonEmail"
-      class="action-button-email"
-      href="/contato"
+    <div class="content-btn">
+     <button
+      *ngIf="buttonText"
+      class="action-button-whats"
+      (click)="redirecionaWpp()"
       rel="noopener noreferrer"
     >
-  {{ buttonEmail }}
-    </a>
+        {{ buttonText }}
+      </button>
+
+
+          <button
+            *ngIf="buttonEmail"
+            class="action-button-email"
+           (click)="redirecionaContato()"
+            rel="noopener noreferrer"
+          >
+        {{ buttonEmail }}
+          </button>
+
+
+    </div>
 
   </div>
 </div>
