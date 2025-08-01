@@ -38,6 +38,15 @@
 .footer-copyright {
   p {
     font-size: 10px;
+
+    a{
+      text-decoration: none;
+      color: #fff;
+
+    }
+    a:hover{
+      color: #1167A4;
+    }
   }
 }
 
