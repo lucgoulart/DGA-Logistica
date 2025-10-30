@@ -11,7 +11,7 @@
     .footer-icon-conduta{
      margin-top: 20px;
 
-     img{
+     .logo-dga-footer{
       cursor: pointer;
      }
   }
@@ -22,7 +22,7 @@
   min-width: 200px;
   margin: 10px;
 
-  img {
+  .logo-dga-footer {
     width: 130px;
   }
 }
@@ -58,8 +58,18 @@
   }
 }
 
+.footer-bndes{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  .bndes{
+    width: 350px;
+  }
+}
+
 @media (max-width: 912px) {
-  img {
+  .logo-dga-footer {
     width: 50px !important;
   }
 

@@ -1,6 +1,6 @@
 <footer class="footer">
   <div class="footer-section">
-      <img src="assets/icon-dga-log.png" alt="">
+      <img class="logo-dga-footer" src="assets/icon-dga-log.png" alt="">
   </div>
 
   <div class="footer-section">
@@ -15,14 +15,21 @@
     <p>Fixo: <a href="tel:+551139035027">+55 11 3903-5027</a></p>
     <p>WhatsApp: <a href="https://wa.me/5511989209203">+55 11 98920-9203</a></p>
     <p>Sac: <a href="mailto:sac@Dgalogistica.com.br">sac&#64;Dgalogistica.com.br</a></p>
-
-
   </div>
 
   <div class="footer-section">
     <h3>Redes:</h3>
     <p><a href="https://www.instagram.com/dgalogistica/" target="_blank">Instagram</a></p>
     <p><a href="https://www.linkedin.com/company/dga-log%C3%ADstica/posts/?feedView=all" target="_blank">LinkedIn</a></p>
+    <h3>Institucional:</h3>
+      <div
+    class="footer-icon-conduta"
+    title="Código de Conduta"
+    (click)="downloadCodigoConduta()"
+    style="cursor: pointer;"
+  >
+    <p><a src="assets/icons8-document.svg" alt="Código de Conduta">Código de conduta</a></p>
+  </div>
   </div>
 
   <div class="footer-cnpj">
@@ -33,13 +40,15 @@
     <p>DGA Logística &copy; Todos os direitos reservados. Site produzido por <a target="_blank" href="https://architecturetechnological.com/">Architecture Technological</a></p>
   </div>
 
-  <div
-    class="footer-icon-conduta"
-    title="Código de Conduta"
-    (click)="downloadCodigoConduta()"
-    style="cursor: pointer;"
-  >
-    <img src="assets/icons8-document.svg" alt="Código de Conduta">
+
+  <div class="footer-bndes">
+    <a href="https://www.bndes.gov.br" target="_blank" rel="noopener">
+    <img class="bndes" src="/assets/instituicao.gif"
+         alt="Apoio BNDES"
+         width="220"
+         height="80"
+         style="object-fit: contain; display:block; margin:auto; max-width:100%; height:auto;" />
+  </a>
   </div>
 
 </footer>
