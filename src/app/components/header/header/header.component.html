@@ -1,16 +1,38 @@
-
 <div class="content-header">
 
-<div class="content-header__collumn-img">
-<a href=""><img src="assets/full-dga-symbol.png" alt=""></a>
+  <!-- LOGO -->
+  <div class="content-header__collumn-img">
+    <a href=""><img src="assets/full-dga-symbol.png" alt="" /></a>
+  </div>
+
+  <!-- BOTÃO HAMBÚRGUER -->
+  <button class="menu-btn" (click)="menuOpen = !menuOpen">
+    <span></span><span></span><span></span>
+  </button>
+
+  <!-- MENU NORMAL (DESKTOP) -->
+  <div class="content-header__collumn desktop-menu">
+    <p><a (click)="redirecionarContato()">CONTATO</a></p>
+    <p><a (click)="redirecionarParceiros()">PARCEIROS</a></p>
+    <p><a (click)="redirecionarInstitucional()">INSTITUCIONAL</a></p>
+    <p><a (click)="redirecionarRedes()">REDES</a></p>
+    <p><a href="">HOME</a></p>
+  </div>
+
 </div>
 
+<!-- SIDEBAR MOBILE -->
+<div class="sidebar" [class.open]="menuOpen">
+  <div class="sidebar-content">
 
+    <p><a (click)="redirecionarContato(); menuOpen=false">CONTATO</a></p>
+    <p><a (click)="redirecionarParceiros(); menuOpen=false">PARCEIROS</a></p>
+    <p><a (click)="redirecionarInstitucional(); menuOpen=false">INSTITUCIONAL</a></p>
+    <p><a (click)="redirecionarRedes(); menuOpen=false">REDES</a></p>
+    <p><a href="" (click)="menuOpen=false">HOME</a></p>
 
-<div class="content-header__collumn">
-  <!-- <p><a (click)="redirecionarRasy
-  treio()">RASTREIO</a></p> -->
-  <p><a (click)="redirecionarContato()">CONTATO</a></p>
-  <p><a (click)="redirecionarParceiros()">PARCEIROS</a></p>
-  <p><a href="">HOME</a></p>
   </div>
+</div>
+
+<!-- FUNDO ESCURO BLUR -->
+<div class="overlay" [class.open]="menuOpen" (click)="menuOpen=false"></div>

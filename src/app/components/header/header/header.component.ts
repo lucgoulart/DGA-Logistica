@@ -7,6 +7,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  menuOpen = false;
+
 
   constructor(private router: Router) { }
 
@@ -24,5 +26,14 @@ export class HeaderComponent implements OnInit {
   redirecionarContato(){
     this.router.navigate(['/contato'])
   }
+
+   redirecionarInstitucional(){
+    this.router.navigate(['/institucional'])
+  }
+
+   redirecionarRedes(){
+    this.router.navigate(['/redes'])
+  }
+
 
 }

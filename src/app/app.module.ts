@@ -16,6 +16,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { InstitucionalComponent } from './components/institucional/institucional/institucional.component';
+import { RedesComponent } from './components/redes/redes/redes.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ColunasImgComponent,
     ParceirosComponent,
     RastreiosComponent,
-    ContatoComponent
+    ContatoComponent,
+    InstitucionalComponent,
+    RedesComponent
   ],
   imports: [
     BrowserModule,
